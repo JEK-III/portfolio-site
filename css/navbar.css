@@ -1,0 +1,90 @@
+nav {
+	background-color: #03263b;
+	opacity: 90%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 80px;
+	z-index: 9999; /* to enure nav bar rests on top of content */
+	width: 100%;
+	font-size: 1.3em;
+	font-weight: 300;
+	border-bottom: 2px solid black;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 30px;
+	text-align: center;
+}
+
+nav ul li a {
+	color: white;
+}
+
+nav ul li a:hover {
+	color: #6da5ff;
+}
+
+.selected_link {
+	color: #6da5ff;
+}
+
+#company_logo {
+	width: 64px;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+
+#menu {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	height: 50px;
+	width: 50px;
+	background-color: gray;
+	outline: none;
+	visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	nav ul {
+		position: relative;
+		top: 12px;
+		height: 210px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #03263b;
+		visibility: hidden;
+	}
+
+	nav ul li {
+		display: block;
+		position: relative;
+		padding-top: 22px;
+	}
+
+	#company_logo {
+		left: 0;
+	}
+
+	#menu {
+		visibility: visible;
+	}
+} 
+
+@media only screen and (min-width: 801px) {
+	/* if necessary, reset visibility of ul li items.
+}

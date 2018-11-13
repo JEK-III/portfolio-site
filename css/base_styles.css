@@ -1,0 +1,56 @@
+* {
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	color: orange;
+}
+
+img {
+	width:100%;
+}
+
+figure {
+	border: 1px solid #dee4ed;
+	background-color: #dee4ed;
+}
+
+figcaption {
+	padding: 8px 16px;
+	font-size:0.8em;
+}
+
+.skill {
+	text-transform: uppercase;
+	color: navy;
+}
+
+.project_logo {
+	display:block;
+	margin: auto;
+	width: 300px;
+}
+
+#main_container {
+	position: relative;
+	top: 82px;
+	right: 0px;
+	left: 0px;
+	padding: 16px;
+	background-color: white;
+	color: black;
+
+}
+
+#skill_list {
+	text-align: center;
+}

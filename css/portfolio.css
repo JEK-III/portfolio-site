@@ -1,0 +1,46 @@
+
+.project {
+	width: 96%;
+	margin: auto;
+	margin-top: 16px;
+	border: 2px solid black;
+
+}
+
+.project img {
+	width: 100%;
+}
+
+.project h2 {
+	padding: 0 20px;
+	color: green;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+.project p {
+	padding: 0 20px;
+	font-size: 0.8em;
+	font-weight: 600;
+}
+
+#projects {
+		width: 96%;
+		margin: auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+}
+
+@media only screen and (min-width: 500px) {
+	.project {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.project {
+		width: 30%;
+	}
+}

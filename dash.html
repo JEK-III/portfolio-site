@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<title>home</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/secondary_nav.css">
+	</head>
+	<body>
+		<nav>
+			<img src="images/logo.png" id="company_logo">
+			<ul id="nav_list">
+				<li><a href="index.html" class="selected_link">home</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="portfolio.html">portfolio</a></li>
+				<li><a href="">contact<a></li>
+			</ul>
+			<input id="menu" type="image" src="images/menu_button.png" onclick="makeNavListVisible()">
+		</nav>
+		<!-- add content here -->
+		<div id="main_container">
+			<table>
+				<tr>
+					<td>dash</td>
+					<td>eScholarship</td>
+					<td>Merritt</td>
+					<td>DMPTool</td>
+				</tr>
+			</table>
+			<!-- <div id="secondary_nav">
+				<ul>
+					<li><a href="" class="selected_link">dash</a></li>
+					<li><a href="">eScholarship</a></li>
+					<li><a href="">Merritt</a></li>
+					<li><a href="">DMPTool</a></li>
+				</ul>
+			</div> -->
+			<h1>Dash: Data Sharing Made Easy</h1>
+			<p id="skill_list" class="skill">Comparative Analysis, Usability Testing, UX Design</p>
+			<img src="images/dash/logo.png" class="project_logo">
+			<h2>Introduction</h2>
+
+			<p>Dash is a web application and service developed by the California Digital Library (CDL) for University of California researchers to advance open science and comply with funder and publisher mandates by publishing their data. Because the amount of time required to share data is a major barrier, Dash adopts a streamlined approach– researchers in a hurry can self-deposit datasets easily with minimal description, while those with time and inclination can add rich, structured metadata to make their data more discoverable and reusable.</p>
+
+			<h2>Problem</h2>
+			
+			<figure>
+				<img src="images/dash/before_after.png">
+				<figcaption>The redesigned Dash homepage (right) is representative of the larger redesign project: less institutional, more modern, lighter, and more usable.</figcaption>
+			</figure>
+
+			<p>For the second major version of Dash, the CDL received a grant from the Alfred P. Sloan foundation to completely rewrite the application with a modular underlying architecture and to redesign the UI for a better user experience. My charge was to research, design, and test the new interface. In the process, I collaborated multiple managers, back- and front-end developers, an additional UX designer (Jane Lee), and an external visual designer (Randle Design).</p>
+			<p>For the redesigned interface, we had four main goals:</p>
+			<ol>
+				<li>Make sure the submission workflow was as easy as possible. Because we expected most researchers to deposit infrequently, we prioritized learnability by unfamiliar users over usability by experts.</li>
+				<li>Redesign  the “landing page” where information about a dataset is displayed to make it more readable in the manner of a scientific article.</li>
+				<li>Lighten and modernize the overall look and feel to be less clunky and institutional. </li>
+				<li> Incorporate responsive design so that, at a minimum, a user on a mobile device can easily learn enough about a dataset to decide whether to download it later. </li>
+			</ol>
+
+			<h2>Submission Workflow<h2/>
+
+			<h3>Research: Comparative Analysis</h3>
+
+			<p>The first step In reconsidering the submission workflow was to conduct a comparative analysis of similar services to explore the space of possible solutions and discover any predominating conventions that users might expect. I examined the submission workflows and feature sets of three other data publication applications.</p>
+
+			<p>Summary of comparative analysis of publication workflow and features between Dash and similar services.</p>
+
+			<p>While Dash asks users to enter dataset description first and then upload files, all of the other services begin with file upload. </p>
+
+	<!-- 		Submission workflows for Dash and similar services -->
+
+			<p>We decided to test both submission workflows, plus a third alternative in which users could upload files and enter description on the same page in either order.</p>
+			<p>To do this, I built interactive prototypes in Axure to simulate each of the three submission workflows.</p>
+			
+			<h3>Design: Workflows</h3>
+
+			<p>To obtain new-user impressions, I recruited academic users unfamiliar with Dash for testing. A UX teammate (Jane Lee) conducted tests of the workflows while I took notes. Surprisingly, none of the users preferred the conventional upload-first workflow. Opinions were split between the other two, but the existing workflow was more immediately understood.</p>
+
+			<p>The solution we ultimately settled on was to leave the existing dash workflow intact, but enable users to freely navigate between steps via a process map at the top of each page.</p>
+
+			<h2>Landing/Item Page</h2>
+
+			<p>In many ways, the most important page in Dash is the item/landing page, which displays a dataset’s documentation together with a download link. The most common ways data consumers arrive at Dash go through the landing page: it is indexed by external search engines, the dataset’s Digital Object Identifier (DOI) resolves to it, and associated articles link to it. </p>
+
+			<h3>Resarch: Comparative Analysis</h3>
+
+			<p>To strengthen the association between article and data publication and make the landing page more readable for academic audiences, I decided to model the redesigned Dash landing page on the landing pages of journal articles. I conducted a comparative analysis of landing pages of seven data publication services and five academic  journals, considering functionality, layout, what metadata was presented, and metadata presentation formats.</p>
+
+			<p>An example finding was that although author names were typically actionable, the functionality was inconsistent. In some cases, clicking on an author name initiated a new search; in others, it opened a popup with additional author information. An informal survey of scientists confirmed that they did not have clear or consistent expectations of the outcome. To avoid this confusion, I decided that Dash author names would not be actionable, and that all author information would be displayed in the open.</p>
+
+			<!-- Landing page wireframes -->
+
+			</p>I refined the landing page design through many iterations of Axure wireframes (left, center), before handing the page off to Randle Design for the final visual design template (right). </p>
+
+			<p>Dash sitemap, annotated to emphasize the division between the content consumer/reader side (which is completely open) and the creator/submitter side, which is restricted to logged-in authorized users.</p>
+
+			<h2>Responsive design</h2>
+
+			<p>Landing/item page designs for desktop (left), tablet (center), and mobile device (right). The download button is prominently located in desktop and tablet, but is de-emphasized in mobile.</p>
+
+		</div>
+
+		<script type="text/javascript" src="js/main_script.js"></script>
+
+	</body>
+</html>
