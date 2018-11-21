@@ -1,27 +1,71 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-		<title>home</title>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>John Kratz</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/base_styles.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	</head>
 	<body>
 		<nav id="primary_nav">
-			<img src="images/logo.png" id="company_logo">
+<!--            <p><a href="index.html">John Kratz, PhD</a></p>-->
 			<ul id="nav_list">
-				<li><a href="index.html" class="selected_link">home</a></li>
-				<li><a href="">about</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li><a href="">contact<a></li>
+                <li><a href="index.html#portfolio">portfolio</a></li>
+				<li><a href="resume.html">resume</a></li>
 			</ul>
-			<input id="menu" type="image" src="images/menu_button.png" onclick="makeNavListVisible()">
+			<input id="menu" type="image" src="images/bars-solid.svg" onclick="makeNavListVisible()">
 		</nav>
 		<!-- add content here -->
-		<!-- <div id="main_container">
+		<div id="main_container">
+            <h1>John Kratz, Ph.D.</h1>
+            <img src="images/headshot.png" alt="photo of john k." id="headshot">
 			<p>I am a UX designer and researcher at the California Digital Library, with a decade of experience as an academic researcher in neurobiology. Combining a practitioner’s experience with both systematic and informal user research, I design software for scholars.</p>
-		</div> -->
+            
+            <div id="portfolio">
+                <h2>Portfolio</h2>
+                <div id="projects">
+                        <div class="project">
+                            <a href="dash.html">
+                            <img src="images/dash_cover.jpg" alt="drawer full of collected and pinned insects">
+                            <h2>Dash: Data Sharing Made Easy</h2>
+                            <p class="skill">wireframes, prototypes, usability testing, comparative analysis</p>
+                            </a>
+                            <!--
+                            <ul>
+                                <li>wireframes,</li>
+                                <li>prototypes,</li>
+                                <li>usability testing,</li>
+                                <li>comparative analysis</li>
+                            </ul>
+                        -->
+                        </div>
+                        <div class="project">
+                            <a href="escholarship.html">
+                            <img src="images/escholarship_cover.jpg" alt="neuroanatomy drawings on vellum">
+                            <h2>eScholarship</h2>
+                            <p class="skill">wireframes, prototypes, usability testing, comparative analysis</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="cdl-personas.html">
+                            <img src="images/cdl_personas_darcy.jpg" alt="drawer full of bugs">
+                            <h2>CDL User Personas</h2>
+                            <p class="skill">user personas</p>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <img src="images/dash_cover.jpg" alt="drawer full of bugs">
+                            <h2>Merritt: Share, Manage, and Preserve Your Content</h2>
+                            <p class="skill">process diagramming</p>
+                        </div>
+                
+                </div>
+            </div>
+		</div>
 
 		<script type="text/javascript" src="js/main_script.js"></script>
 	</body>

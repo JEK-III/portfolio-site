@@ -15,8 +15,16 @@ h1 {
 	color: orange;
 }
 
+h2 {
+    text-align: center;
+}
+
 img {
-	width:100%;
+	width: 100%;
+}
+
+svg {
+    fill: currentColor;
 }
 
 figure {
@@ -45,7 +53,7 @@ figcaption {
 	top: 82px;
 	right: 0px;
 	left: 0px;
-	padding: 16px;
+	padding: 24px;
 	background-color: white;
 	color: black;
 
