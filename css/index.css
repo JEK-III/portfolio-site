@@ -3,3 +3,16 @@
     margin: auto;
     width: 200px;
 }
+
+#profile-links {
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 126px;
+}
+
+#profile-links img {
+    width: 36px;
+    padding: 4px;
+    margin: 0 8px;
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title>eScholarship</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<!--		<link rel="stylesheet" type="text/css" href="css/secondary_nav.css">-->
+        <link rel="stylesheet" type="text/css" href="css/project_page.css">
+	</head>
+	<body>
+		<nav>
+			<nav id="primary_nav">
+            <img id="nav_headshot" src="images/headshot_sm.png" alt="photo of john kratz">
+            <p><a href="index.html">John Kratz, PhD</a></p>
+			<ul id="nav_list">
+                <li><a href="index.html#portfolio">portfolio</a></li>
+				<li><a href="resume.html">resume</a></li>
+			</ul>
+			<input id="menu" type="image" src="images/icons/bars-solid.svg" onclick="makeNavListVisible()">
+		</nav>
+		</nav>
+		<!-- add content here -->
+		<div id="main_container">
+            <h1>eScholarship</h1>
+            
+            <h2>Introduction</h2>
+            
+            <p>eScholarship is the Open Access institutional repository for articles, books, theses, and multimedia content from the University of California system. Within the UC system, eScholarship provides publishing services to faculty, staff, and students, and to UC-affiliated peer-reviewed journals. For users worldwide, eScholarship offers a unified experience for discovery and consumption of UC scholarship.</p>
+
+            <h2>Overall Problem</h2>
+            
+            <p>This ongoing project is a complete redesign and rewriting of the eScholarship front-end intended to modernize the technology and look and feel of the service. To improve buy-in from individual UC campus libraries, it was decided that the new eScholarship (version 5) will emphasize campus identities and offer expanded branding and customization options.</p>
+
+            <p>I took over as the UX designer for the project after research and design were well underway. A full set of wireframes had already been designed (by Andrew Ellis), iterated on (by Andrew and Robert Wang), and tested. However, due to evolving requirements, significant design work remained. My role is to update the UI designs based on stakeholder input (including completely redesigning some pages), solve lingering design problems, and work with developers as they implement the designs.</p>
+
+            <h2>Choosing a submission system</h2>
+
+            <p>One of the the major challenges in designing of the eScholarship front-end is that content enters the system through three different submission systems. Journals published through eScholarship accept submission through a publishing backend (OJS), material covered by the UC faculty senate Open Access policy are uploaded through Symplectic Elements, and all other material is submitted to a department or research unit through a third system. Further complicating matters, whether an item is covered by the OA policy is a function of both the author’s position and the nature of the work.</p>
+
+            <p>For design consistency, and to shield users from the complexity of the system, every page includes a consistently positioned deposit button in the global header. Initially, this button opened a panel with an array of options and an area for marketing copy. In user tests conducted by Jane Lee when I started work on the project, this approach was confusing and somewhat annoying to users. </p>
+
+
+            <figure>
+                <img src="images/escholarship/deposit_worklfow_sketch.png" alt="hand drawn workflow diagram">
+                <figcaption>Sketches of the full decision tree for submission routing (left) and variations based on starting page (right).</figcaption>
+            </figure>
+            
+         
+            <figure>
+                <img src="images/escholarship/deposit_routing_outline.png" alt="high-level decision tree draft">
+                <figcaption>High-level draft of the decision tree to direct users to the appropriate submission system.</figcaption>
+            </figure>
+
+            <p>To replace it, I designed a modal “wizard” to guide users to the appropriate submission point. Key design criteria were: (1) users should be able to arrive at the right place without having to fully understand the complex system, and (2) users who are ineligible should be dismissed as quickly as possible.</p>
+            
+           <figure>
+                <img src="images/escholarship/deposit_routing_complete.png" alt="final submission wizard workflow">
+                <figcaption>Final workflow through the modal deposit wizard.</figcaption>
+            </figure>
+            
+            <div class="primary-link-area">
+                <a href="http://c1uige.axshare.com/">eScholarship Wireframes</a>
+                <a href="http://escholarship.org">eScholarship Production Site</a>
+            </div>
+ 
+        </div>
+    </body>
+</html>

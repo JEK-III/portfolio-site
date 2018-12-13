@@ -1,0 +1,50 @@
+.responsive-showcase {
+/*
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+*/
+    display: block;
+    position: relative;
+    
+
+}
+
+.responsive-screenshot-wide {
+/*    flex-grow: 3*/
+    width: 48%
+}
+
+.responsive-screenshot-medium {
+/*    flex-grow: 2;*/
+    width: 33%;
+}
+
+.responsive-screenshot-narrow {
+/*    flex-grow: 3;*/
+    width: 13%;
+}
+
+.medium-image {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
+.primary-link-area {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 0;
+    justify-content: center;
+}
+
+.primary-link-area a {
+    width: 240px;
+    text-decoration: underline;
+    text-decoration-skip: spaces;
+    text-align: center;
+    padding: 16px;
+    margin: 0 24px;
+    border: 1px solid #174341;
+}
+

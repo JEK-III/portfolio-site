@@ -1,34 +1,29 @@
 <!doctype html>
 <html>
 	<head>
-		<title>home</title>
+		<title>Dash</title>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/base_styles.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
-		<link rel="stylesheet" type="text/css" href="css/secondary_nav.css">
+<!--		<link rel="stylesheet" type="text/css" href="css/secondary_nav.css">-->
+        <link rel="stylesheet" type="text/css" href="css/project_page.css">
 	</head>
 	<body>
 		<nav>
-			<img src="images/logo.png" id="company_logo">
+			<nav id="primary_nav">
+            <img id="nav_headshot" src="images/headshot_sm.png" alt="photo of john kratz">
+            <p><a href="index.html">John Kratz, PhD</a></p>
 			<ul id="nav_list">
-				<li><a href="index.html" class="selected_link">home</a></li>
-				<li><a href="">about</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li><a href="">contact<a></li>
+                <li><a href="index.html#portfolio">portfolio</a></li>
+				<li><a href="resume.html">resume</a></li>
 			</ul>
-			<input id="menu" type="image" src="images/menu_button.png" onclick="makeNavListVisible()">
+			<input id="menu" type="image" src="images/icons/bars-solid.svg" onclick="makeNavListVisible()">
+		</nav>
 		</nav>
 		<!-- add content here -->
 		<div id="main_container">
-			<table>
-				<tr>
-					<td>dash</td>
-					<td>eScholarship</td>
-					<td>Merritt</td>
-					<td>DMPTool</td>
-				</tr>
-			</table>
+		
 			<!-- <div id="secondary_nav">
 				<ul>
 					<li><a href="" class="selected_link">dash</a></li>
@@ -47,7 +42,7 @@
 			<h2>Problem</h2>
 			
 			<figure>
-				<img src="images/dash/before_after.png">
+				<img src="images/dash/before_after.png" alt="dash homepage screenshot split into before and after">
 				<figcaption>The redesigned Dash homepage (right) is representative of the larger redesign project: less institutional, more modern, lighter, and more usable.</figcaption>
 			</figure>
 
@@ -66,9 +61,14 @@
 
 			<p>The first step In reconsidering the submission workflow was to conduct a comparative analysis of similar services to explore the space of possible solutions and discover any predominating conventions that users might expect. I examined the submission workflows and feature sets of three other data publication applications.</p>
 
-			<p>Summary of comparative analysis of publication workflow and features between Dash and similar services.</p>
-
+            <figure>
+                <a href="docs/comparative_analysis.pdf"><img src="images/dash/comparative_analysis_1400px.png" alt="thumbnail of comparative analysis table"></a>
+                <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
+            </figure>
+			
 			<p>While Dash asks users to enter dataset description first and then upload files, all of the other services begin with file upload. </p>
+                
+            <img class="medium-image" src="images/dash/Deposit-workflow.gif" alt="flowchart comparing Dash workflow and similar services">
 
 	<!-- 		Submission workflows for Dash and similar services -->
 
@@ -77,6 +77,8 @@
 			
 			<h3>Design: Workflows</h3>
 
+            <img class="medium-image" src="images/dash/Deposit-workflow-test.gif" alt="three workflows to test: upload first, metadata entry first, and combined">
+            
 			<p>To obtain new-user impressions, I recruited academic users unfamiliar with Dash for testing. A UX teammate (Jane Lee) conducted tests of the workflows while I took notes. Surprisingly, none of the users preferred the conventional upload-first workflow. Opinions were split between the other two, but the existing workflow was more immediately understood.</p>
 
 			<p>The solution we ultimately settled on was to leave the existing dash workflow intact, but enable users to freely navigate between steps via a process map at the top of each page.</p>
@@ -86,20 +88,43 @@
 			<p>In many ways, the most important page in Dash is the item/landing page, which displays a dataset’s documentation together with a download link. The most common ways data consumers arrive at Dash go through the landing page: it is indexed by external search engines, the dataset’s Digital Object Identifier (DOI) resolves to it, and associated articles link to it. </p>
 
 			<h3>Resarch: Comparative Analysis</h3>
-
+                
 			<p>To strengthen the association between article and data publication and make the landing page more readable for academic audiences, I decided to model the redesigned Dash landing page on the landing pages of journal articles. I conducted a comparative analysis of landing pages of seven data publication services and five academic  journals, considering functionality, layout, what metadata was presented, and metadata presentation formats.</p>
 
+            <figure>
+                <a href="docs/comparative_analysis_item_page.pdf"><img src="images/dash/comparative_analysis_item_page.png" alt="thumbnail of comparative analysis table"></a>
+                <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
+            </figure>
+                
 			<p>An example finding was that although author names were typically actionable, the functionality was inconsistent. In some cases, clicking on an author name initiated a new search; in others, it opened a popup with additional author information. An informal survey of scientists confirmed that they did not have clear or consistent expectations of the outcome. To avoid this confusion, I decided that Dash author names would not be actionable, and that all author information would be displayed in the open.</p>
+                
+            <figure>
+                <a href="images/dash/landing_page_evolution.png"><img src="images/dash/landing_page_evolution.png" alt="screenshots of three versions of the dash item landing page"></a>
+                <figcaption>I refined the landing page design through many iterations of Axure wireframes (left, center), before handing the page off to Randle Design for the final visual design template (right).</figcaption>
+            </figure>
+                
 
 			<!-- Landing page wireframes -->
 
-			</p>I refined the landing page design through many iterations of Axure wireframes (left, center), before handing the page off to Randle Design for the final visual design template (right). </p>
-
-			<p>Dash sitemap, annotated to emphasize the division between the content consumer/reader side (which is completely open) and the creator/submitter side, which is restricted to logged-in authorized users.</p>
+            <figure>
+                <a href="images/dash/dash_sitemap.png"><img src="images/dash/dash_sitemap.png" alt="dash sitemap"></a>
+			     <figcaption>Dash sitemap, annotated to emphasize the division between the content consumer/reader side (which is completely open) and the creator/submitter side, which is restricted to logged-in authorized users.</figcaption>
+            </figure>
 
 			<h2>Responsive design</h2>
-
-			<p>Landing/item page designs for desktop (left), tablet (center), and mobile device (right). The download button is prominently located in desktop and tablet, but is de-emphasized in mobile.</p>
+            
+            <figure class="responsive-showcase">
+                <img src="images/dash/landing_page_-_ideal.png" class="responsive-screenshot-wide">
+                <img src="images/dash/landing_page_-_ideal_tablet.png" class="responsive-screenshot-medium">
+                <img src="images/dash/landing_page_-_ideal_mobile.png" class="responsive-screenshot-narrow">
+                <figcaption>Landing/item page designs for desktop (left), tablet (center), and mobile device (right). The download button is prominently located in desktop and tablet, but is de-emphasized in mobile.</figcaption>
+            </figure>
+                
+            
+            <div class="primary-link-area">
+                <a href="http://1ttejm.axshare.com/">Dash Wireframes</a>
+                <a href="https://dash.ucop.edu">Dash Production Site</a>
+            </div>
 
 		</div>
 

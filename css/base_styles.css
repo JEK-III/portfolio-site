@@ -4,19 +4,22 @@
 
 body {
 	margin: 0;
+    background-color: #FAFAF4;
+    color: #142F41;
 }
 
 a {
-	text-decoration: none;
+	color: #174341;
 }
 
 h1 {
 	text-align: center;
-	color: orange;
+	color: #174341;
 }
 
 h2 {
     text-align: center;
+    color: #174341;
 }
 
 img {
@@ -29,12 +32,13 @@ svg {
 
 figure {
 	border: 1px solid #dee4ed;
-	background-color: #dee4ed;
+	background-color: white;
 }
 
 figcaption {
 	padding: 8px 16px;
-	font-size:0.8em;
+	font-size: 0.8em;
+    border-top: 1px solid #dee4ed;
 }
 
 .skill {
@@ -50,13 +54,10 @@ figcaption {
 
 #main_container {
 	position: relative;
+    max-width: 1200px;
+    margin: auto;
 	top: 82px;
-	right: 0px;
-	left: 0px;
-	padding: 24px;
-	background-color: white;
-	color: black;
-
+	padding: 36px;
 }
 
 #skill_list {

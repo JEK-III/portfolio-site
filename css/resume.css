@@ -1,0 +1,11 @@
+h1 h2 h3 {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 8px;
+}
