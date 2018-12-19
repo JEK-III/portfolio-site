@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-    background-color: #FAFAF4;
+    background-color: #FBFBF6;
     color: #142F41;
 }
 
@@ -14,6 +14,7 @@ a {
 
 h1 {
 	text-align: center;
+    font-weight: 400;
 	color: #174341;
 }
 
@@ -26,9 +27,7 @@ img {
 	width: 100%;
 }
 
-svg {
-    fill: currentColor;
-}
+
 
 figure {
 	border: 1px solid #dee4ed;
@@ -53,11 +52,9 @@ figcaption {
 }
 
 #main_container {
-	position: relative;
     max-width: 1200px;
-    margin: auto;
-	top: 82px;
 	padding: 36px;
+    margin: 0 auto;
 }
 
 #skill_list {

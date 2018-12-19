@@ -1,13 +1,43 @@
+
+
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-list li {
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 4px;
+    background-color: #446330;
+    color: #FBFBF6;
+    font-size: 0.6em;
+}
+
+
+.project-logo {
+    display: block;
+    width: 16em;
+    margin: auto;
+    object-fit: scale-down;
+}
+
+.medium-image {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
 .responsive-showcase {
-/*
+
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-*/
-    display: block;
-    position: relative;
-    
-
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .responsive-screenshot-wide {
@@ -25,26 +55,44 @@
     width: 13%;
 }
 
-.medium-image {
-    display: block;
-    margin: auto;
-    max-width: 800px;
-}
+
+/* links to wireframes and production sites */
 
 .primary-link-area {
+    margin: 1em 0;
     display: flex;
     flex-direction: row;
-    margin: 36px 0;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .primary-link-area a {
-    width: 240px;
     text-decoration: underline;
     text-decoration-skip: spaces;
     text-align: center;
-    padding: 16px;
-    margin: 0 24px;
+    padding: 1em 2em;
     border: 1px solid #174341;
 }
 
+
+/* block of text with an accompanying figure */
+
+.text-w-fig {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3; 
+    background-color: purple;
+}
+
+.thumbnail {
+    flex-grow: 1;
+    background-color: red;
+}
+
+/* MEIDA QUERIES */
+
+@media only screen and (min-width: 500px) {
+    .text-w-fig {
+        flex-direction: row;
+    }
+
+} 

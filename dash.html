@@ -13,10 +13,8 @@
         <nav>
             <img src="images/headshot-portrait.jpg" alt="photo of john kratz">
             <a id="site-title" href="index.html">John Kratz, PhD</a>
-            <div id="main-nav">
-                <a href="index.html#portfolio">portfolio</a>
-                <a href="resume.html">resumé</a>
-            </div>
+            <a href="index.html#portfolio">portfolio</a>
+            <a href="resume.html">resumé</a>
 		</nav>
         
 		<!-- add content here -->
@@ -30,9 +28,14 @@
 					<li><a href="">DMPTool</a></li>
 				</ul>
 			</div> -->
+            <img src="images/dash/logo.png" class="project-logo">
+
 			<h1>Dash: Data Sharing Made Easy</h1>
-			<p id="skill_list" class="skill">Comparative Analysis, Usability Testing, UX Design</p>
-			<img src="images/dash/logo.png" class="project_logo">
+			<ul class="skill-list">
+                <li>Comparative Analysis</li>
+                <li>Usability Testing</li>
+                <li>UX Design</li>
+            </ul>
 			<h2>Introduction</h2>
 
 			<p>Dash is a web application and service developed by the California Digital Library (CDL) for University of California researchers to advance open science and comply with funder and publisher mandates by publishing their data. Because the amount of time required to share data is a major barrier, Dash adopts a streamlined approach– researchers in a hurry can self-deposit datasets easily with minimal description, while those with time and inclination can add rich, structured metadata to make their data more discoverable and reusable.</p>
@@ -56,13 +59,16 @@
 			<h2>Submission Workflow<h2/>
 
 			<h3>Research: Comparative Analysis</h3>
+                
+            <div class="text-w-fig">
 
-			<p>The first step In reconsidering the submission workflow was to conduct a comparative analysis of similar services to explore the space of possible solutions and discover any predominating conventions that users might expect. I examined the submission workflows and feature sets of three other data publication applications.</p>
+                <p>The first step In reconsidering the submission workflow was to conduct a comparative analysis of similar services to explore the space of possible solutions and discover any predominating conventions that users might expect. I examined the submission workflows and feature sets of three other data publication applications.</p>
 
-            <figure>
-                <a href="docs/comparative_analysis.pdf"><img src="images/dash/comparative_analysis_1400px.png" alt="thumbnail of comparative analysis table"></a>
-                <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
-            </figure>
+                <figure class="thumbnail">
+                    <a href="docs/comparative_analysis.pdf"><img src="images/dash/comparative_analysis_1400px.png" alt="thumbnail of comparative analysis table"></a>
+                    <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
+                </figure>
+            </div>
 			
 			<p>While Dash asks users to enter dataset description first and then upload files, all of the other services begin with file upload. </p>
                 
@@ -87,12 +93,14 @@
 
 			<h3>Resarch: Comparative Analysis</h3>
                 
-			<p>To strengthen the association between article and data publication and make the landing page more readable for academic audiences, I decided to model the redesigned Dash landing page on the landing pages of journal articles. I conducted a comparative analysis of landing pages of seven data publication services and five academic  journals, considering functionality, layout, what metadata was presented, and metadata presentation formats.</p>
+			<div class="text-w-fig">
+                <p>To strengthen the association between article and data publication and make the landing page more readable for academic audiences, I decided to model the redesigned Dash landing page on the landing pages of journal articles. I conducted a comparative analysis of landing pages of seven data publication services and five academic  journals, considering functionality, layout, what metadata was presented, and metadata presentation formats.</p>
 
-            <figure>
-                <a href="docs/comparative_analysis_item_page.pdf"><img src="images/dash/comparative_analysis_item_page.png" alt="thumbnail of comparative analysis table"></a>
-                <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
-            </figure>
+                <figure class="thumbnail">
+                    <a href="docs/comparative_analysis_item_page.pdf"><img src="images/dash/comparative_analysis_item_page.png" alt="thumbnail of comparative analysis table"></a>
+                    <figcaption>Summary of comparative analysis of publication workflow and features between Dash and similar services.</figcaption>
+                </figure>
+            </div>
                 
 			<p>An example finding was that although author names were typically actionable, the functionality was inconsistent. In some cases, clicking on an author name initiated a new search; in others, it opened a popup with additional author information. An informal survey of scientists confirmed that they did not have clear or consistent expectations of the outcome. To avoid this confusion, I decided that Dash author names would not be actionable, and that all author information would be displayed in the open.</p>
                 
@@ -125,8 +133,6 @@
             </div>
 
 		</div>
-
-		<script type="text/javascript" src="js/main_script.js"></script>
 
 	</body>
 </html>
