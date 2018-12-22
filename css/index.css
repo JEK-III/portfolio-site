@@ -16,3 +16,11 @@
     padding: 4px;
     margin: 0 8px;
 }
+
+nav img {
+    visibility: hidden;
+}
+
+nav #site-title {
+    visibility: hidden;
+}
