@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-    background-color: #FBFBF6;
+    background-color: #f9fffe;
     color: #142F41;
 }
 
@@ -14,7 +14,8 @@ a {
 
 h1 {
 	text-align: center;
-    font-weight: 400;
+    font-weight: 300;
+	font-size: 2em;
 	color: #174341;
 }
 
@@ -26,7 +27,6 @@ h2 {
 img {
 	width: 100%;
 }
-
 
 
 figure {

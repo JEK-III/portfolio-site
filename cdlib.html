@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CDLib</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<!--		<link rel="stylesheet" type="text/css" href="css/secondary_nav.css">-->
+        <link rel="stylesheet" type="text/css" href="css/project_page.css">
+	</head>
+	<body>
+        <nav>
+            <img src="images/headshot-portrait.jpg" alt="photo of john kratz">
+            <a id="site-title" href="index.html">John Kratz, PhD</a>
+            <a href="index.html#portfolio">portfolio</a>
+            <a href="resume.html">resumé</a>
+		</nav>
+
+	<div id="main_container">
+		<h1>CDLib.org</h1>
+		<p>CDLib.org is the main website for the California Digital Library; it communicates our mission, promotes our services, and delivers important technical information to librarians across the UC system.
+		</p>
+		
+		<p>This project is a re-platforming and partial redesign of CDLib.org to</p>
+		<ul>
+			<li>Empower CDL staff to update their own content by moving the site into a WordPress-based CMS.</li>
+			<li>Improve the visitor experience by standardizing ad hoc content and design choices made over the the last decade.</li>
+			<li>Unify separate desktop and mobile sites with a single responsive and accessible design.</li>
+		</ul>
+		<h2>Challenges</h2>
+		<ul>
+			<li>The CDL provides a complex assortment of digital library services whose connections are often not obvious.</li>
+			<li>Divisions within the CDL use CDLib.org for substantially different purposes.
+			</li>
+		</ul>
+		<h2>My Role</h2>
+		<ul>
+			<li>Streamline the sprawling site IA and improve navigation</li>
+			<li>Create a design library and responsive page templates for the new CMS.</li>
+		</ul>
+		<h2>Information Architecture and Navigation</h2>
+		<h3>Problem</h3>
+		<p>User research (conducted by colleagues) revealed that the current site’s information architecture (IA) is challenging for visitors to navigate. Frequent visitors may have bookmarked the few (or many!) pages they need for their work, but even they have little sense of the overall architecture of the site.</p>
+
+		<p>Likely causes include</p>
+		<ul>
+			<li>The site’s deep, org-chart-based IA means little to anyone who doesn’t work there.</li>
+			<li>Divisional subsections are organized inconsistently, such that familiarity with one part of the site confers no advantage in another.</li>
+			<li>Current site navigation is highly redundant, offering a bewildering array of options for getting to any given location.</li>
+		</ul>
+
+		<h3>Approach</h3>
+		<ul>
+			<li>Conduct a comparative analysis of approaches taken by other organizations of similar complexit</li>
+			<li>Design a more intuitive IA
+				<ul>
+					<li>Card sort</li>
+					<li>Tree test</li>
+				</ul>
+			</li>
+			<li>Streamline navigation and reduce redundant links whenever possible
+				<ul>
+					<li>Google Analytics to find the paths that people actually use
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<h3>Comparative Analysis</h3>
+		<p>Although CDLib.org poses thorny challenges, they are by no means unique, and a lot has happened since the site was last redesigned. Before beginning design work, I conducted a comparative analysis to see how other academic and commercial organizations have approached some of the known challenges.</p>
+		<h3>Navigation</h3>
+		<p>Regardless of IA, the current site’s highly redundant navigation could be streamlined. While judicious use of redundant links can certainly enhance usability, excessive redundancy creates visual and cognitive clutter, and is particularly destructive to the experience of visitors who use assistive technology.</p>
+		<p>To decide what to prune, I decided to use analytics from the current site to see how users actually navigated it. In the most straightforward example, I set up Google Tag Manager events to track whether users navigated to CDL blog posts by clicking on the post title or on the redundant “more” link that appears after a text excerpt. Title links were clicked on almost 10x more frequently. Although it’s possible that the “more” links are important for a subset of users, it seems safe to remove them.</p>
+		<h2>Design library</h2>
+		<h3>Problem</h3>
+		<p>More than a decade of ad hoc decisions have led to a lot of inconsistency across and even within sections of the site. During the redesign, we wanted to unify the site as much as possible at the page layout and design element levels.</p>
+		<h3>Approach</h3>
+		<p>To begin to reduce the complexity of the site, I undertook two major holistic design surveys.</p>
+		<ul>
+			<li>A page-level survey focused on layout and function</li>
+			<li>An element-level survey of interactive and non-interactive design elements
+			</li>
+		</ul>
+		<p>An example finding: Many pages on the site are devoted to lists of links, but these fall into two distinct categories:</p>
+		<ul>
+			<li><strong>Curated</strong> index pages have a relatively small number of manually-selected links to variegated resources, often with descriptions of each resource and its utility. (e.g., a “licensing toolkit” to help individual campuses negotiate electronic journal licenses)
+			</li>
+			<li><strong>High-volume</strong> index pages have a relatively high number of links to uniform resources, often organized by date. (e.g., links to quarterly reports or weekly statistics dumps)
+			</li>
+		</ul>
+		<p>I constructed rough layouts for each example page using virtual post-its.</p> 
+		<figure class="page-flow">
+			
+<!--			<img src="images/cdlib/service-layout-inventory-square.png">-->
+			<img src="images/cdlib/postit-calisphere.png">
+			<img src="images/cdlib/postit-cobweb.png">
+			<img src="images/cdlib/posit-elinks.png">
+			<img src="images/cdlib/posit-erms.png">
+			<img src="images/cdlib/posit-instructionalmaterials.png">
+			<img src="images/cdlib/posit-licensedresources.png">
+			<img src="images/cdlib/posit-UCDAMS.png">
+			<img src="images/cdlib/postit-ezid.png">
+			<img src="images/cdlib/posit-west.png">
+			<img src="images/cdlib/postit-dash.png">
+			<img src="images/cdlib/postit-dmptool.png">
+			<img src="images/cdlib/postit-escholarship.png">
+			<img src="images/cdlib/postit-hathitrust.png">
+			<img src="images/cdlib/postit-massdig.png">
+			
+			
+			<figcaption></figcaption>
+		</figure>
+		<p>then created a consensus template (still in post-its)  that could handle the content from all of the example pages.</p>
+		<figure>
+			<img src="images/cdlib/cdlib-template.png">
+			<figcaption></figcaption>
+		</figure>
+		
+	</div>
+	</body>
+</html>

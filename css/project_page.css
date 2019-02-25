@@ -19,6 +19,7 @@
 }
 
 
+
 .project-logo {
     display: block;
     width: 16em;
@@ -40,6 +41,7 @@
     align-items: flex-start;
 }
 
+
 .responsive-screenshot-wide {
 /*    flex-grow: 3*/
     width: 48%
@@ -53,6 +55,16 @@
 .responsive-screenshot-narrow {
 /*    flex-grow: 3;*/
     width: 13%;
+}
+
+.page-flow {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.page-flow img {
+	width: 180px;
 }
 
 
