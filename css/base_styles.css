@@ -4,9 +4,11 @@
 
 body {
 	margin: 0;
-    background-color: #f9fffe;
+    background-color: #fcfeff;
     color: #142F41;
 }
+
+
 
 a {
 	color: #174341;
@@ -16,12 +18,12 @@ h1 {
 	text-align: center;
     font-weight: 300;
 	font-size: 2em;
-	color: #174341;
+	color: #34191e;
 }
 
 h2 {
     text-align: center;
-    color: #174341;
+    color: #213F58;
 }
 
 img {
@@ -40,17 +42,6 @@ figcaption {
     border-top: 1px solid #dee4ed;
 }
 
-.skill {
-	text-transform: uppercase;
-	color: navy;
-}
-
-.project_logo {
-	display:block;
-	margin: auto;
-	width: 300px;
-}
-
 #main_container {
     max-width: 1200px;
 	padding: 36px;
@@ -60,3 +51,112 @@ figcaption {
 #skill_list {
 	text-align: center;
 }
+
+/*FOOTER STYLES*/
+
+
+footer {
+	color: #4A554A;
+	background-color: #F2F3F2;
+	border-top: 1px solid #b0bbb1;
+	padding: 2vw 10vw;
+}
+
+footer nav {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+/*	grid-template-rows: repeat(2, auto);*/
+	grid-template-areas: 
+		"pr pt"
+		"so pt";
+}
+
+.÷l;.
+#footer-primary-links {
+	grid-area: pr;
+	background-color: aqua;
+}
+
+#footer-portfolio-links {
+	grid-area: pt;
+	background-color: aquamarine;
+}
+
+#footer-social-links {
+	grid-area: so;
+	display: flex;
+	flex-direction: column;
+	background-color: antiquewhite;
+}
+
+footer h2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 44px;
+	margin: 0;
+	padding: 8px;
+	text-align: left;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+
+footer div a:last-child{
+	border: none;
+}
+
+footer a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 44px;
+	color: #4A554A;
+	text-decoration: none;
+}
+
+#footer-primary-links a {
+	font-weight: 600;
+}
+
+footer a:visited {
+	color: #4A554A;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+
+.footer-profile-logo {
+	width: 36px;
+	padding: 4px;
+	background-color: purple;
+/*	filter: grayscale(100%);*/	
+}
+
+@media only screen and (min-width: 600px) {
+	footer {
+		padding: 2vw;
+	}
+	
+	footer nav {
+		grid-template-areas:
+			"pr pt"
+			"so so";
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	
+	#footer-portfolio-links h2 {
+		display: inline;
+	}
+	
+	#footer-primary-links a {
+		display: inline;
+	}
+	
+	#footer-portfolio-links a {
+		display: inline;
+	}

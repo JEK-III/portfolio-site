@@ -14,19 +14,19 @@
         </style>
 	</head>
 	<body>
-        <nav>
+        <nav id="top-nav" role="banner">
             <img src="images/headshot-portrait.jpg" alt="photo of john kratz">
             <a id="site-title" href="index.html">John Kratz, PhD</a>
-            <a href="index.html#portfolio">portfolio</a>
-            <a href="resume.html">resumé</a>
+            <a href="index.html#portfolio">projects</a>
+            <a href="resume.html">résumé</a>
 		</nav>
 		<!-- add content here -->
-		<div id="main_container">
+		<div id="main_container" role="main">
 			<h1>John Ernest Kratz, Ph.D.</h1>
 			<div id="index-page-container">
             <div id="personal-info">
                 <img src="images/headshot.png" alt="photo of john k." id="headshot">
-                <p>I am a UX designer and researcher at the California Digital Library, with a decade of experience as an academic researcher in neurobiology. Combining a practitioner’s experience with both systematic and informal user research, I design software for scholars.</p>
+                <p>I am a UX designer and researcher at the California Digital Library, with a decade of experience as an academic researcher in neurobiology. Combining a practitioner’s experience with both systematic and informal user research, I design intiutive interfaces for complex systems.</p>
                 <div id="profile-links">
                     <a href="http://www.linkedin.com/in/johnekratz/"><img src="images/icons/linkedin-brands.svg" alt="LinkedIn Logo"></a>
                     <a href="https://orcid.org/0000-0002-9610-5370"><img src="images/icons/ORCIDiD_iconvector.svg" alt="ORCID ID Logo"></a>
@@ -34,51 +34,145 @@
             </div>
 
             <div id="portfolio">
-				<h2>Portfolio</h2>
+				<h2 id="portfolio-title">Projects</h2>
                 <div id="projects">
-                        <div class="project">
-                            <a href="dash.html">
-<!--                            <img src="images/dash_cover.jpg" alt="drawer full of collected and pinned insects">-->
-<!--							<img src="images/logos/dash-logo.svg" alt="circular logo made from five orange V shapes and the word 'Dash'">-->
+         			<div class="project" id="project-dash">
+						<div class="project-logo">
 							<img src="images/logos/dash-burst.svg" alt="circular logo made from five orange V shapes">
-							
-                            <h2>Dash: Data Sharing Made Easy</h2>
-                            <p class="skill">wireframes, prototypes, usability testing, comparative analysis</p>
-                            </a>
-                            <!--
-                            <ul>
-                                <li>wireframes,</li>
-                                <li>prototypes,</li>
-                                <li>usability testing,</li>
-                                <li>comparative analysis</li>
-                            </ul>
-                        -->
-                        </div>
-                        <div class="project">
-                            <a href="escholarship.html">
-<!--                            <img src="images/escholarship_cover.jpg" alt="neuroanatomy drawings on vellum">-->
-							<img src="images/logos/escholarship-logo.svg" alt="circular logo made from blue dots and the words 'eScholarship: University of California'">
-                            <h2>eScholarship</h2>
-                            <p class="skill">wireframes, prototypes, usability testing, comparative analysis</p>
-                            </a>
-                        </div>
-                        <div class="project">
-                            <a href="cdl-personas.html">
-                            <img src="images/cdl_personas_darcy.jpg" alt="drawer full of bugs">
-                            <h2>CDL User Personas</h2>
-                            <p class="skill">user personas</p>
-                            </a>
-                        </div>
-                        <div class="project">
-                            <img src="images/dash_cover.jpg" alt="drawer full of bugs">
-                            <h2>Merritt: Share, Manage, and Preserve Your Content</h2>
-                            <p class="skill">process diagramming</p>
-                        </div>
+						</div>
+						
+						<div class="project-title">
+							<h2><a href="dash.html">Dash</a></h2>
+						</div>
+						
+						<div class="project-tagline">
+							<p>Data Publication and Preservation</p>
+						</div>
+						
+						<div class="project-skills">
+							<ul>
+								<li>wireframes,</li>
+								<li>prototypes,</li>
+								<li>usability testing,</li>
+								<li>comparative analysis</li>
+							</ul>
+						</div>
+<!--					</a>-->
+						</div>
+							<div class="project">
+<!--							<a href="escholarship.html">-->
+
+								<div class="project-logo">
+									<img src="images/logos/escholarship-burst.svg" alt="circular logo made of blue dots">
+								</div>
+								<div class="project-title">
+									<h2><a href="escholarship.html">eScholarship</a></h2>
+								</div>
+								<div class="project-tagline">
+									<p>Institutional Repository and Open Access Publishing</p>
+								</div>
+									<div class="project-skills">
+										<ul>
+											<li>wireframes,</li>
+											<li>prototypes,</li>
+											<li>usability testing,</li>
+											<li>comparative analysis</li>
+										</ul>
+									</div>
+<!--							</a>-->
+							</div>
+					<div class="project">						
+						<div class="project-logo">
+							<img src="images/logos/cdl-swirl.svg" alt="circular swirling yellow and blue logo">
+						</div>
+						
+						<div class="project-title">
+							<h2><a href="cdlib.html">CDLib.org</a></h2>
+						</div>
+						
+						<div class="project-tagline">
+							<p>California Digital Library Website</p>
+						</div>
+						
+						<div class="project-skills">
+							<ul>
+								<li>information architecture,</li>
+								<li>wireframes,</li>
+								<li>design library,</li>
+								<li>usability testing,</li>
+								<li>comparative analysis</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="project">						
+						<div class="project-logo">
+							<img src="images/logos/cdl-swirl.svg" alt="circular swirling yellow and blue logo">
+						</div>
+
+						<div class="project-title">
+							<h2>CDL Personas</h2>
+						</div>
+
+						<div class="project-tagline">
+							<p>Cross-Service User Personas</p>
+						</div>
+
+						<div class="project-skills">
+							<ul>
+								<li>user personas</li>
+							</ul>
+						</div>
+					</div>
+                 	<div class="project">						
+						<div class="project-logo">
+							<img src="images/logos/merritt-burst.svg" alt="circular logo made from five orange V shapes">
+						</div>
+
+						<div class="project-title">
+							<h2>Merritt</h2>
+						</div>
+
+						<div class="project-tagline">
+							<p>Share, Manage, and Preserve Your Content</p>
+						</div>
+
+						<div class="project-skills">
+							<ul>
+								<li>process diagramming</li>
+							</ul>
+						</div>
+					</div>
+					</div>
 				</div>
                 </div>
             </div>
-		</div>
 
-		<script type="text/javascript" src="js/main_script.js"></script>
 	</body>
+	<footer>
+		<nav id="footer-nav">
+			<div id="footer-primary-links">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+			</div>
+			<div id="footer-portfolio-links">
+				<h2>Portfolio</h2>
+				<a href="dash.html">Dash</a>
+				<a href="escholarship.html">eScholarship</a>
+				<a href="cdlib.html">CDLib.org</a>
+				<a href="">CDL User Personas</a>
+				<a href="">Merritt</a>
+			</div>
+			<div id="footer-social-links">
+<!--
+				<a href="http://www.linkedin.com/in/johnekratz/"><img src="images/icons/linkedin-brands.svg" alt="LinkedIn Logo" class="footer-profile-logo"></a>
+				<a href="https://orcid.org/0000-0002-9610-5370"><img src="images/icons/ORCIDiD_iconvector.svg" alt="ORCID ID Logo" class="footer-profile-logo"></a>
+
+-->
+				<img src="images/icons/linkedin-brands.svg" alt="LinkedIn Logo" class="footer-profile-logo">
+				<img src="images/icons/ORCIDiD_iconvector.svg" alt="ORCID ID Logo" class="footer-profile-logo">
+			</div>
+		</nav>
+
+	</footer>
 </html>

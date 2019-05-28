@@ -25,30 +25,113 @@ nav #site-title {
     visibility: hidden;
 }
 
-#portfolio h2 {
-	font-weight: 400;
+#portfolio-title {
+	font-weight: 300;
 	font-size: 2em;
-	margin-bottom: 0;
+	margin-bottom: 0.5em;
+}
+
+.project-logo {
+    grid-area: lg;
+	padding: 0.2em 1em 0 0;
+	border-right: 1px solid #b0bbb1;
+}
+
+.project-logo img {
+	width: 50px;
+}
+
+.project-title {
+    grid-area: ti;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1em;
+}
+
+.project-title h2 {
+	margin: 0;
+	text-align: left;
+	font-size: 1.8em;
+	font-weight: 200;
+}
+
+.project-title h2 a {
+	text-decoration: none;
+}
+
+.project-skills {
+    grid-area: sk;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 600;
+    color: #3D1441;
+}
+
+.project-skills ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+}
+
+.project-skills ul li {
+	display: inline;
+	margin-right: 0.3em;
+	text-transform: uppercase;
+	font-size: 0.75em;
+}
+
+.project-tagline {
+	grid-area: tg;
+	padding: 0.5em 1em 0em 1em;
+}
+
+.project-tagline p {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 500;
+	color: #285E78;
+	line-height: 1.1em;
+
 }
 
 
 .project {
-	border: 1px solid #786a37;
-    text-align: center;
-	margin-bottom: 16px;
+	display: grid;
+/*    grid-template-rows: 80px 2em 2em;*/
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+          "lg ti"
+          "lg tg"
+          "lg sk";
+	border: 1px solid #b0bbb1;
 /*	max-width: 800px;*/
 	min-width: 300px;
-	padding: 2em 1em 1em 1em;
+	max-height: 200px;
+	padding: 1em;
+	margin-bottom: 1em;
 
+	
 }
 
+#project-dash {
+	background: url("../images/dash_cover.jpg") cover;
+}
+
+
+
+/*
 .project img {
 	max-width:64px;
 	float: left;
 }
 
 .project h2 {
-	padding: 0 20px;
+	padding: 0 20px;s
 	color: #566c40;
 	font-size: 3em;
 }
@@ -60,17 +143,27 @@ nav #site-title {
 	font-weight: 600;
     color: #3D1441;
 }
+*/
         
 @media only screen and (min-width: 600px) {
-  #projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3vw;
-	padding: 3vw;
-  }
-	
-	h1 {
+  	h1 {
 		font-size: 3em;
+	}
+	
+	#projects {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 3vw;
+		padding: 3vw;
+  	}
+	
+	.project {
+		margin-bottom: 0;
+	}
+	
+	#portfolio-title {
+		font-size: 2.3em;
+		margin-bottom: 0;
 	}
 	
 @media only screen and (min-width: 1200px) {
